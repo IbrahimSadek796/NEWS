@@ -41,13 +41,13 @@ function display(){
     for(var i=0;i<option.length;i++){
         if(option[i].description !==null && option[i].urlToImage !==null){
                 container+=`<div class="col-md-4 py-2">
-                <div class="responses shadow rounded position-relative  bg-light overflow-hidden">
+                <div class="responses shadow rounded position-relative  bg-dark text-light overflow-hidden">
                     <img class="w-100" src="${option[i].urlToImage}" alt="">
                 
                     <div class ="caption text-center p-1">
                         <h3>${option[i].title.split(' ').splice(0,4).join(' ')}</h3>
                         <P>${option[i].description.split(' ').splice(0,10).join(' ')}</P>
-                        <a href="${option[i].url}" class='btn btn-outline-info'>Show Information</a>
+                        <a href="${option[i].url}" class='btn'>Show</a>
                     </div>
                 </div>
             </div>`

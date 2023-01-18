@@ -10,7 +10,7 @@ img{
 }
 
 body{
-    background-color: #000;
+    background-color: #fff;
     overflow: hidden;
 
 }
@@ -107,6 +107,7 @@ li:hover{
 
 .caption{
     height: 11.5rem;
+    position: relative;
 }
 
 .containers{
@@ -143,9 +144,6 @@ li:hover{
 
 .title{
      display:inline-block;
-     /* transform: translateX(100%);
-     transition: 5s; */
-     /* font-weight: 800px; */
      font-size: 18px;
     animation-name: animate;
     animation-duration: 100s;
@@ -167,3 +165,21 @@ li:hover{
         
     }
 } 
+
+
+
+.btn{
+    position: absolute;
+    width: 30% !important;
+    padding: 2px !important;
+    right: 5% !important;
+    bottom: 5% !important;
+    border: 2px solid rgb(222, 38, 96);
+    color: rgb(222, 38, 96);
+    transition: .6S;
+}
+
+.btn:hover{
+    color: #000;
+    background-color: rgb(222, 38, 96);
+}
