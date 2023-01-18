@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/all.min.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>News</title>
+</head>
+<body class="">
+
+    <div class="loading">
+        <i class="fas fa-spinner fa-spin fa-3x text-danger"></i>
+    </div>
+
+    <div class="item" id="item">
+        <nav style="background-color:rgb(222, 38, 96);" class="navbar navbar-dark">
+            <div class="container">
+                <li id="li" category="sports" class="list-unstyled">Sports</li>
+                <li id="li" category="business" class="list-unstyled">Business</li>
+                <li id="li" category="health" class="list-unstyled">Health</li>
+                <li id="li" category="general" class="list-unstyled">General</li>
+            </div>
+        </nav>
+        <div style="z-index: 100; overflow: hidden;" class="descrip w-100 d-flex justify-content-center m-2">
+            <div id="titleNews" style="height: 40px; width: 75%; overflow: hidden; color: black; padding: auto; margin: auto;" class="align-items-center show w-75 bg-white h-5 rounded shadow">
+                <pre><p id="title" class="title" style=" height: 30px; color: black;"></p></pre>
+            </div>
+        </div>
+        <div class="containers navbar-dark">
+            
+                <li country="eg" class="list-unstyled p-2 ">Egypt</li>
+                <li country="us" class="list-unstyled p-2 ">U.S.A</li>
+                <li country="in" class="list-unstyled p-2 ">India</li>
+                <li country="it" class="list-unstyled p-2 ">Italy</li>
+
+        </div>
+        
+        <div class="container">
+            <div class="row g-3" id="showDate">
+
+            </div>
+        </div>
+    </div>
+    <script src="./script/bootstrap.bundle.min.js"></script>
+    <script src="./script/jquery-3.6.3.min.js"></script>
+    <script src="./script/index.js"></script>
+
+</body>
+</html>
